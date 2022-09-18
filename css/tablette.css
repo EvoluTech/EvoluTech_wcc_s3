@@ -1,0 +1,9 @@
+@media screen and (max-width:900px) {
+    .carte {
+        display: none;
+    }
+    .card-grid {
+        width: 1000px;
+    }
+
+}

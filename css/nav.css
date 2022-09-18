@@ -1,0 +1,87 @@
+* {
+    list-style: none;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--gris);
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+
+}
+nav ul li {
+    /* background: var(--noir); */
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+nav ul li img {
+    transform: scale(0.8);
+}
+nav ul .nv-active {
+   padding: 5px;
+   background-color: black;
+   display: flex;
+   align-items: center;
+}
+nav .user {
+    padding: 17px;
+    line-height: 17px;
+}
+nav .user div {
+    background: var(--noir);;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: url(../image/assets/pdp@72x.png);
+    background-size: cover;
+    background-position: 0 -8px ;
+}
+
+.navbar {
+    width: 100%;
+    font-size: 14px;
+}
+.navbar ul {
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    line-height: 14px;
+    align-items: flex-start;
+    font-weight: 600;
+    line-height: 17px;
+    margin-left: 1.2%;
+}
+.navbar ul li {
+    position: relative;
+   color: #CBCBCB;
+   cursor: pointer;
+   transition: 0.4s;
+}
+.navbar ul li:hover {
+   color: #858585;
+}
+.navbar ul li.active {
+   color: var(--noir);
+}
+.navbar ul li.active::after {
+    content: "";
+    position: absolute;
+top: 21px;
+left: 38%;
+background-color: var(--orange);
+width: 25px;
+height: 3px ;
+}
+
+

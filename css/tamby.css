@@ -1,0 +1,129 @@
+main {
+  margin: 1.5% 2.2%;
+}
+
+.recommand .card-ambany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.recommand .card-ambany .c-ambany {
+  width: 49.8%;
+}
+
+/* .card-ambany ito */
+.recommand .card-ambany .c-ambany .c4 {
+  margin: 5px 20px 18px 0px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 8px 3px whitesmoke;
+}
+
+.recommand .card-ambany .c-ambany .c4 .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recommand .card-ambany .c-ambany .c4 .left [class*=img-] {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 73px;
+  width: 75px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  margin: 2px 20px 0px 2px;
+  align-items: center;
+}
+.recommand .card-ambany .c-ambany .c4 .left .img-0{
+  background-image: url(../image/assets/match/maison4@72x.png);
+}
+.recommand .card-ambany .c-ambany .c4 .left .img-1 {
+  background-image: url(../image/assets/match/maison2@72x.png);
+}
+.recommand .card-ambany .c-ambany .c4 .left .img-2 {
+  background-image: url(../image/assets/match/maison0@72x.png);
+}
+.recommand .card-ambany .c-ambany .c4 .left .img-3 {
+  background-image: url(../image/assets/match/maison1@72x.png);
+}
+
+
+
+.recommand .card-ambany .c-ambany .c4 .left .description-ambany {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 18px;
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.recommand .card-ambany .c-ambany .c4 .left .info-ambany {
+  padding: 5px 0px 5px 2px;
+  display: flex;
+}
+
+.recommand .card-ambany .c-ambany .c4 .left .description-ambany .prix-ambany {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.recommand
+  .card-ambany
+  .c-ambany
+  .c4
+  .left
+  .description-ambany
+  .prix-ambany
+  span {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+.recommand .card-ambany .c-ambany .c4 .right {
+  /* background-color: goldenrod; */
+  position: relative;
+  right: 0;
+  float: right;
+}
+.recommand .card-ambany .c-ambany .c4 .right button {
+  padding: 0px 10px 8px 10px;
+  border: none;
+  background-color: #ffe9dc;
+  cursor: pointer;
+  padding-top: 11px;
+  border-radius: 5px;
+
+}
+.recommand .card-ambany .c-ambany .c4 .right button img {
+transform: scale(0.8);
+}
+
+.ratting {
+  margin-right: 12px;
+}
+.blur-active{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  min-height: 1000px;
+  background-color: #f4933820;
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+
+.activity-mobile,
+.search-bar-mobile, nav .mobile-menu {
+  display: none;
+}
+
+

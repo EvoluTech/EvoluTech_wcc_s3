@@ -1,0 +1,111 @@
+@import url('http://fonts.cdnfonts.com/css/made-okine-sans-personal-use');
+*,
+::after,
+::before {
+  margin: 0;
+  font-family:sans-serif;
+}
+:root {
+  --orange: #f49338;
+  --noir: #292726;
+  --gris: #f7f5f6;
+}
+body {
+  margin: 0;
+}
+.container {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* contenu de main */
+main .result {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+main .result p {
+  position: relative;
+  font-size: 18px;
+}
+main .result p .chercher {
+  font-weight: 900;
+}
+main .result p span.chiffre {
+  background-color: var(--gris);
+  border-radius: 4px;
+  position: absolute;
+  bottom: 12%;
+  padding: 3px 10px 3px 10px;
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+.recommand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.recommand p {
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 0.9em;
+}
+.recommand .card__content p span {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+li::after{
+  content: '';
+  position: absolute;
+  margin-bottom: -6px;
+  display: block;
+  width:0;
+  left: 50%;
+  bottom:0;
+  
+  background: var(--orange);
+  transition: all ease-in-out 0.2s;
+}
+
+li:hover::after{
+  animation: listXd ease-in-out 0.4s forwards;
+
+}
+
+/*motion design*/
+@keyframes listXd {
+0%{
+  width:0;
+  height: 2.7px;
+  left: 50%;
+  
+}
+/*etirement*/
+50%{
+  width:50%;
+  height: 2px;
+  left: 25%;
+
+}
+/*compression*/
+75%{
+  width:38%;
+  height: 2.6px;
+  left: 35%;
+}
+100%{
+  width:40%;
+  left: 30%;
+  height: 2.5px;
+}
+}
