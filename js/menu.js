@@ -1,11 +1,13 @@
 // const menuHumb =document.querySelector('.menu-round')
 window.addEventListener("DOMContentLoaded", (event) => {
 
-
-    document.querySelector(".loader").style.display="none";
+setTimeout(()=>{
+ document.querySelector(".loader").style.display="none";
 
     document.querySelector("body").style.overflow="initial"
     
+},1500)
+   
 
     
    
